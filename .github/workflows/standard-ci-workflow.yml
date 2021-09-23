@@ -20,6 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
+          - {os: windows-latest, r: 'release'}
           - {os: macOS-latest, r: 'release'}
           - {os: macOS-latest, r: 'devel'}
           - {os: ubuntu-16.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
@@ -42,6 +43,10 @@ jobs:
           install.packages('remotes')
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
         shell: Rscript {0}
+
+      - name: Install MinGW in Windows
+        if: runner.os == 'Windows'
+        uses: egor-tensin/setup-mingw@v2
 
       - name: Cache R packages
         if: runner.os != 'Windows'
