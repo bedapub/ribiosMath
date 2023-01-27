@@ -1,4 +1,5 @@
 #' Simulate from density
+#'
 #' Compared with bootstrapping, the results do not reveal input values, and the
 #' empirical distribution can be smoother. The function assumes that the distribution
 #' can be aproximated using a gaussian kernel.
