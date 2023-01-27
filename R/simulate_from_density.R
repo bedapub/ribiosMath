@@ -1,7 +1,7 @@
 #' Simulate from density
 #' Compared with bootstrapping, the results do not reveal input values, and the
-#' empirical distribution can be smoother. The function assumes that the data
-#' is normally distributed.
+#' empirical distribution can be smoother. The function assumes that the distribution
+#' can be aproximated using a gaussian kernel.
 #' @param vec Numeric vector
 #' @param N Integer, number of simulated instances
 #' @author Iakov Davydov
@@ -11,6 +11,6 @@
 #' @importFrom stats density rnorm
 #' @export
 simulate_from_density <- function(vec, N = 1e5) {
-  fit <- density(vec, bw="SJ")
+  fit <- density(vec, bw="SJ", kernel = "gaussian")
   rnorm(N, sample(vec, size = N, replace = TRUE), fit$bw)
 }
