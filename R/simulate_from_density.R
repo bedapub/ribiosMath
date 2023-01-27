@@ -1,6 +1,6 @@
 #' Simulate from density
 #' Compared with bootstrapping, the results do not reveal input values, and the
-#' empirical distribution can be more smooth. The function assumes that the data
+#' empirical distribution can be smoother. The function assumes that the data
 #' is normally distributed.
 #' @param vec Numeric vector
 #' @param N Integer, number of simulated instances

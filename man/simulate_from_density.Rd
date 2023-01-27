@@ -4,7 +4,7 @@
 \alias{simulate_from_density}
 \title{Simulate from density
 Compared with bootstrapping, the results do not reveal input values, and the
-empirical distribution can be more smooth. The function assumes that the data
+empirical distribution can be smoother. The function assumes that the data
 is normally distributed.}
 \usage{
 simulate_from_density(vec, N = 1e+05)
@@ -17,7 +17,7 @@ simulate_from_density(vec, N = 1e+05)
 \description{
 Simulate from density
 Compared with bootstrapping, the results do not reveal input values, and the
-empirical distribution can be more smooth. The function assumes that the data
+empirical distribution can be smoother. The function assumes that the data
 is normally distributed.
 }
 \examples{
