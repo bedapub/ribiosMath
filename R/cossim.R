@@ -19,7 +19,7 @@
 #' 
 #' @return Numeric vector or matrix, the cossine similarity between the inputs
 #' 
-#' @references \url{http://en.wikipedia.org/wiki/Cosine_similarity}
+#' @references \url{https://en.wikipedia.org/wiki/Cosine_similarity}
 #' @note Currently, \code{na.rm} is only considered when both inputs are vectors
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
 #' @seealso \code{\link{cor}}, \code{\link{cosdist}}
@@ -82,7 +82,7 @@ cossim <- function(x,y, na.rm=TRUE) {
 #' 
 #' @return Numeric vector or matrix, the cossine similarity between the inputs
 #' 
-#' @references \url{http://en.wikipedia.org/wiki/Cosine_similarity}
+#' @references \url{https://en.wikipedia.org/wiki/Cosine_similarity}
 #' @note Currently, \code{na.rm} is only considered when both inputs are vectors
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
 #' @seealso \code{\link{cor}}, \code{\link{cossim}}

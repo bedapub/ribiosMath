@@ -43,7 +43,7 @@ testVecMatDist1 <- cosdist(testMat1[,1L], testMat2)
 testVecMatDist <- cosdist(testMat1, testMat2)
 }
 \references{
-\url{http://en.wikipedia.org/wiki/Cosine_similarity}
+\url{https://en.wikipedia.org/wiki/Cosine_similarity}
 }
 \seealso{
 \code{\link{cor}}, \code{\link{cossim}}

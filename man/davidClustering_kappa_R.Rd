@@ -46,10 +46,9 @@ ribiosMath:::davidClustering_kappa_R(synColKappa, removeRedundant = TRUE, debug=
 
 }
 \references{
-\itemize{
-\item{Huang *et al.* The DAVID Gene Functional Classification Tool: a novel biological module-centric algorithm to functionally analyze large gene lists. Genome Biology, 2007}
-\item{Additional file of the manuscript available at \url{https://david.ncifcrf.gov/helps/2D_Introduction_files/additional_file_13.doc}}
-}
+Huang et al. The DAVID Gene Functional Classification Tool: a novel
+biological module-centric algorithm to functionally analyze large gene
+lists. Genome Biology, 2007. \doi{10.1186/gb-2007-8-9-r183}
 }
 \author{
 Jitao David Zhang <jitao_david.zhang@roche.com>

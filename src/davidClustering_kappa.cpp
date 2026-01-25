@@ -1,7 +1,6 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
-// [[Rcpp::plugins("cpp11")]]
 
 typedef std::vector<int> IntVec;
 typedef std::list< std::vector<int> > IntList;
@@ -136,10 +135,9 @@ void dc_mergeSeeds(IntList &seeds,
 //' The function has only been tested in a few anecdotal examples. Cautions and more systematic tests are required before it is applied to critical datasets.
 //'
 //' @references
-//' \itemize{
-//' \item{Huang *et al.* The DAVID Gene Functional Classification Tool: a novel biological module-centric algorithm to functionally analyze large gene lists. Genome Biology, 2007}
-//' \item{Additional file of the manuscript available at \url{https://david.ncifcrf.gov/helps/2D_Introduction_files/additional_file_13.doc}}
-//' }
+//' Huang et al. The DAVID Gene Functional Classification Tool: a novel
+//' biological module-centric algorithm to functionally analyze large gene
+//' lists. Genome Biology, 2007. \doi{10.1186/gb-2007-8-9-r183}
 //'
 //' @examples 
 //' synData <- matrix(c(rep(c(rep(1, 10), rep(0, 5)), 3),

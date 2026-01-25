@@ -2,10 +2,7 @@
 % Please edit documentation in R/simulate_from_density.R
 \name{simulate_from_density}
 \alias{simulate_from_density}
-\title{Simulate from density
-Compared with bootstrapping, the results do not reveal input values, and the
-empirical distribution can be smoother. The function assumes that the data
-is normally distributed.}
+\title{Simulate from density}
 \usage{
 simulate_from_density(vec, N = 1e+05)
 }
@@ -15,10 +12,9 @@ simulate_from_density(vec, N = 1e+05)
 \item{N}{Integer, number of simulated instances}
 }
 \description{
-Simulate from density
 Compared with bootstrapping, the results do not reveal input values, and the
-empirical distribution can be smoother. The function assumes that the data
-is normally distributed.
+empirical distribution can be smoother. The function assumes that the distribution
+can be aproximated using a gaussian kernel.
 }
 \examples{
 my_vec <- c(23, 27, 26, 24, 25)
