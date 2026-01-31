@@ -60,7 +60,7 @@ void dc_uniqueSeeds(IntList &seeds) {
 void dc_mergeSeeds(IntList &seeds,
                    double multiLinkageThr=0.5,
                    int mergeRule=1) {
-  int lastSeedCount;
+  int lastSeedCount = 0;
   int newSeedCount = -1;
   while(newSeedCount<0 || newSeedCount != lastSeedCount) {
     lastSeedCount = seeds.size();
