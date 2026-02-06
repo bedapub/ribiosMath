@@ -49,9 +49,9 @@ IntList dc_kappaRowSeeds(NumericMatrix kappaMatrix,
 void dc_uniqueSeeds(IntList &seeds) {
   for(IntList::iterator it=seeds.begin(); it!=seeds.end(); ++it) {
     std::sort(it->begin(), it->end());
-    std::transform(it->begin(), it-> end(),
-                   it->begin(),
-                   [](int s) -> int { return s+1; });
+    for(IntVec::iterator vit = it->begin(); vit != it->end(); ++vit) {
+      *vit += 1;
+    }
   }
   seeds.sort();
   seeds.erase( std::unique( seeds.begin(), seeds.end() ), seeds.end() );
