@@ -10,9 +10,7 @@
 
 0 errors | 0 warnings | 1 note
 
-The note regarding C++11 specification: This package uses C++11 lambda
-expressions in the Rcpp code, which requires C++11 support. The specification
-is essential for the package to compile correctly.
+The NOTE is for new CRAN submission (first-time package).
 
 ## Notes for CRAN reviewers
 
