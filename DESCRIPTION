@@ -1,6 +1,6 @@
 Package: ribiosMath
 Type: Package
-Title: Mathematical and Statistical Tools in 'ribios' 
+Title: Mathematical and Statistical Tools in 'ribios'
 Version: 1.2.0
 Date: 2026-01-24
 Authors@R:
@@ -9,7 +9,7 @@ Authors@R:
            role = c("aut", "cre", "ctb"),
            email = "jitao_david.zhang@roche.com",
            comment = c(ORCID="0000-0002-3085-0909")))
-Description: Mathematical and statistical tools for computational biology in drug discovery. Functions are designed for high performance.
+Description: Mathematical and statistical tools for computational biology in drug discovery. Functions are designed for high performance. Zhang (2025) <https://github.com/bedapub/ribiosMath>.
 Depends:
     R (>= 3.4.0)
 Imports:
