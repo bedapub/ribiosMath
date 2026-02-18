@@ -11,6 +11,10 @@ simulate_from_density(vec, N = 1e+05)
 
 \item{N}{Integer, number of simulated instances}
 }
+\value{
+A numeric vector of length \code{N} with values simulated from the
+kernel density estimate of \code{vec}.
+}
 \description{
 Compared with bootstrapping, the results do not reveal input values, and the
 empirical distribution can be smoother. The function assumes that the distribution

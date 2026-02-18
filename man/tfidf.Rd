@@ -20,6 +20,10 @@ tfidf(
 
 \item{idfAddOne}{Logical, whether one should be added to both numerator and denominator to calculate IDF. See details below.}
 }
+\value{
+A numeric matrix of the same dimensions as \code{tdMat}, containing
+the TF-IDF values.
+}
 \description{
 Calculate TF-IDF using a input matrix with terms in rows and documents in columns
 }

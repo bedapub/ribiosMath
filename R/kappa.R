@@ -9,9 +9,6 @@
 #' @family kappa functions
 #' @seealso \code{\link{colKappa}} to calculate the same statistic using a linear algebra based routine
 #' 
-#' @examples
-#' testMat <- cbind(c(1,1,0,0,1,0), c(1,1,0,1,1,0))
-#' ribiosMath:::kappaSimp(testMat)
 kappaSimp <- function(matrix, minOverlap=0) {
     res <- .Call('_ribiosMath_colKappaSimp', matrix, minOverlap)
     return(res)

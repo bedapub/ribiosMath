@@ -32,6 +32,11 @@ Currently following merge rules are implemented:
 \item{5 (AMEAN RULE) Arithmetic mean of length of intersect divided by length of \emph{both} seeds no less than \code{multiLinkageThr}, a few items tend to appear in multiple clusters.}
 }}
 }
+\value{
+A list of integer vectors. Each element represents a cluster
+and contains the indices of rows belonging to that cluster. Rows can
+appear in multiple clusters (fuzzy clustering).
+}
 \description{
 The function implements the Hierarhical fuzzy multi-linkage partitioning method used in the DAVID Bioinformatics tool.
 }

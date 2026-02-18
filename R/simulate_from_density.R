@@ -5,6 +5,8 @@
 #' can be aproximated using a gaussian kernel.
 #' @param vec Numeric vector
 #' @param N Integer, number of simulated instances
+#' @return A numeric vector of length \code{N} with values simulated from the
+#' kernel density estimate of \code{vec}.
 #' @author Iakov Davydov
 #' @examples
 #' my_vec <- c(23, 27, 26, 24, 25)

@@ -4,6 +4,9 @@
 #' @param idfVariant Variant of inverse document frequency. See details below.
 #' @param idfAddOne Logical, whether one should be added to both numerator and denominator to calculate IDF. See details below.
 #' 
+#' @return A numeric matrix of the same dimensions as \code{tdMat}, containing
+#' the TF-IDF values.
+#'
 #' @details
 #' \code{tfVariant} accepts following options:
 #' \describe{
