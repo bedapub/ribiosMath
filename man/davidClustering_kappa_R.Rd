@@ -32,19 +32,6 @@ The function implements the Hierarhical fuzzy multi-linkage partitioning method 
 \note{
 The function has only been tested in a few anecdotal examples. Cautions and more systematic tests are required before it is applied to critical datasets.
 }
-\examples{
-synData <- matrix(c(rep(c(rep(1, 10), rep(0, 5)), 3),
-rep(0, 4), rep(1, 7), rep(0,4),
-rep(c(rep(0,5), rep(1,10)), 3),
-rep(c(rep(0,3), 1), 4)[-16]), ncol=15, byrow=TRUE)
-rownames(synData) <- sprintf("Gene \%s", letters[1:8])
-colnames(synData) <- sprintf("t\%d", 1:15)
-synRowKappa <- rowKappa(synData)
-synColKappa <- colKappa(synData)
-ribiosMath:::davidClustering_kappa_R(synRowKappa, removeRedundant = TRUE, debug=FALSE)
-ribiosMath:::davidClustering_kappa_R(synColKappa, removeRedundant = TRUE, debug=FALSE)
-
-}
 \references{
 Huang et al. The DAVID Gene Functional Classification Tool: a novel
 biological module-centric algorithm to functionally analyze large gene

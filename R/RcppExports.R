@@ -24,6 +24,10 @@ cossimVec <- function(x, y, narm) {
 #' \item{5 (AMEAN RULE) Arithmetic mean of length of intersect divided by length of \emph{both} seeds no less than \code{multiLinkageThr}, a few items tend to appear in multiple clusters.}
 #' }
 #' 
+#' @return A list of integer vectors. Each element represents a cluster
+#' and contains the indices of rows belonging to that cluster. Rows can
+#' appear in multiple clusters (fuzzy clustering).
+#'
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
 #'
 #' @note

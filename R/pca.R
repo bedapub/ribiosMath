@@ -115,9 +115,11 @@ biplot.bidata <- function(bidata,
   } else {
     points(x, cex=cex[1L], col=col[1L],...)
   }
+  oldpar <- par(no.readonly = TRUE)
+  on.exit(par(oldpar))
   par(new = TRUE)
   dev.hold()
-  on.exit(dev.flush())
+  on.exit(dev.flush(), add = TRUE)
 
   plot(y, axes = FALSE, type = "n", xlim = xlim * ratio, ylim = ylim * 
        ratio, xlab = "", ylab = "", col = col[1L], ...)
