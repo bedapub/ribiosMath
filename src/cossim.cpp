@@ -11,7 +11,7 @@ BEGIN_RCPP
   int sizea=a.size();
   int sizeb=b.size();
   if(sizea != sizeb) {
-    Rf_error("incompatible dimensions");
+    Rcpp::stop("incompatible dimensions");
   }
   NumericVector res(1);
 
